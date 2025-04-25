@@ -240,6 +240,71 @@ footer {
     color: black;
    
   }
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .card {
+      padding: 15px;
+      margin: 15px 10px;
+    }
+  
+    .cardChild {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+    }
+  
+    .cardChild img {
+      height: auto;
+      max-height: 180px;
+    }
+  
+    .desc {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    textarea,
+    select {
+      font-size: 0.95rem;
+      padding: 12px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    #classificationResult,
+    #strategyOutput,
+    #challengeOutput {
+      font-size: 0.95rem;
+    }
+  
+    #progressChart {
+      width: 100% !important;
+      max-width: 100%;
+      height: auto !important;
+    }
+  
+    .back-button-container {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .back-button-container button {
+      width: 100%;
+    }
+  }
   
 
   
