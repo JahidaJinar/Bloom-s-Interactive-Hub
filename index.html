@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom's Interactive Hub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.jpg" />
+  </head>
+  <body>
+    <header>
+      <h1>🌱 Bloom's Interactive Hub</h1>
+      <p>Explore your thinking level and grow smarter every day!</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>🔎 Explore Bloom Taxonomy</h2>
+        <div class="cardChild">
+          <img src="bloom2.jpg" alt="web" />
+          <div class="desc">
+            <h3>&nbsp;From Different Website</h3>
+            <p>&nbsp;<a href="website.html">Explore</a></p>
+          </div>
+        </div>
+
+        <div class="cardChild">
+          <img src="bloom1.jpg" alt="utube" />
+          <div class="desc">
+            <h3>&nbsp;From Youtube Video</h3>
+            <p>&nbsp;<a href="utube.html">Explore</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- Feature 1: Topic Classifier -->
+      <section class="card">
+        <h2>🎯 Topic Classifier Tool</h2>
+        <textarea
+          id="topicInput"
+          placeholder="Submit one question here..."
+        ></textarea>
+        <button onclick="classifyTopic()">Detect Bloom Level</button>
+        <p id="classificationResult"></p>
+      </section>
+
+      <!-- Feature 2: Thinking Strategy Generator -->
+      <section class="card">
+        <h2>🧠 Thinking Strategy Generator</h2>
+        <select id="levelSelector">
+          <option value="">-- Choose a Level --</option>
+          <option value="Remember">Remember</option>
+          <option value="Understand">Understand</option>
+          <option value="Apply">Apply</option>
+          <option value="Analyze">Analyze</option>
+          <option value="Evaluate">Evaluate</option>
+          <option value="Create">Create</option>
+        </select>
+        <button onclick="generateStrategy()">Generate</button>
+        <div id="strategyOutput"></div>
+      </section>
+
+      <!-- Feature 3: Random Bloom Challenge -->
+      <section class="card">
+        <h2>🎲 Random Bloom Challenge</h2>
+        <button onclick="generateChallenge()">Get Challenge</button>
+        <div id="challengeOutput"></div>
+      </section>
+
+      <!-- Feature 4: Thinking Tracker -->
+      <section class="card">
+        <h2>📊 Thinking Progress Tracker</h2>
+        <button onclick="updateProgress()">Update Tracker</button>
+        <button onclick="resetProgress()">Reset Tracker</button>
+        <canvas id="progressChart" width="500" height="200"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Jinar 🌸 | All rights reserved © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

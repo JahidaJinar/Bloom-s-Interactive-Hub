@@ -1,0 +1,245 @@
+/* General Reset & Smooth Scroll */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f0ff;
+  color: #333;
+  animation: fadeIn 1.2s ease-in;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #8c52ff;
+  color: white;
+  animation: popIn 0.8s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  animation: floatIn 1.4s ease forwards;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  animation: slideUp 1.4s ease forwards;
+}
+
+
+
+/* Section Cards */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px auto;
+  border: 10px;
+  max-width: 700px;
+  max-height: 700;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card h2 {
+  color: #6a4c93;
+  margin-bottom: 15px;
+}
+
+.cardChild{
+  width: 300px;
+  height: 200px;
+  border: 2px solid #6a4c93;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #6a4c93;
+  transition: 1s;
+}
+
+img{
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: -50pxpx;
+}
+.desc{
+  padding: 0 10px 0 2px;
+}
+
+.cardChild:hover{
+  box-shadow: 0 8px 20px #6a4c93;
+}
+
+/* Textarea & Select */
+textarea,
+select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background-color: #7f5af0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #6246ea;
+}
+
+/* Output areas */
+#classificationResult,
+#strategyOutput,
+#challengeOutput {
+  margin-top: 15px;
+  font-size: 1rem;
+  background-color: #f0eaff;
+  border-left: 4px solid #a393eb;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Progress Chart */
+#progressChart {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #7e7e7e;
+  
+}
+
+
+  .list-group {
+    max-width: 600px;
+    margin: 2rem auto;
+    animation: fadeSlideUp 1.2s ease;
+  }
+  
+  .list-group-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .list-group-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  
+  /* === Animations === */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeSlideUp {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+    80% {
+      transform: translateY(8px);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .back-button-container button {
+    transition: all 0.3s ease;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: black;
+  }
+  
+  .back-button-container button:hover {
+    background-color: #dddada;
+    color: black;
+   
+  }
+  
+
+  
